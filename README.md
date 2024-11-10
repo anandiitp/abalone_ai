@@ -54,6 +54,3 @@ The last heuristic is given by the difference in the amount of marbles on the bo
 The evaluation function, then, is the sum of the scores given by all the heuristics: *eval = h<sub>1</sub> + h<sub>2</sub> + h<sub>3</sub>*  
 
 
-
-## Results
-Overall, the Principle Variation Search with the Transposition Table Optimization performed best, while Minimax performed worst. 
