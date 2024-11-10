@@ -4,22 +4,6 @@
 ## Abstract
 Abalone-AI is an intelligent game-playing agent for the strategic board game [Abalone](https://en.wikipedia.org/wiki/Abalone_(board_game)). I discuss the implementation of the game-playing agent using several artificial intelligence algorithms.
 
-## Complexity
-Abalone's complexity is comparable to Chess and Go.
-
-| Game     | Board size | State complexity (log<sub>10</sub>) | Game tree complexity (log<sub>10</sub>) | Average plies |
-|----------|------------|------------------|----------------------|---------------|
-| Checkers | 32         | 21               | 31                   | 70            |
-| Chess    | 64         | 46               | 123                  | 80            |
-| **Abalone**  | **61**         | **23**               | **154**                  | **87**            |
-| Go       | 361        | 172              | 360                  | 150           |
-> *A **game tree** is a tree whose nodes are positions in a game and whose branches (edges) are moves. The complete game tree for a game is the game tree starting at the initial position and containing all possible moves from each position. The number of leaf nodes in the complete game tree represent the number of possible ways to play the game.*
->
-> *The **branching factor** is the number of children of each node. In Abalone, the average branching factor is 60.*
-> 
-> *A **ply** refers to a half-move: one of the turn of the players. As a result, after 20 moves of an Abalone game, 40 plies have been completed. The average plies for an Abalone game is 87. So, the game tree complexity can be estimated by raising the game’s average branching factor to the power of plies in an average game:*
-> 
-> 60<sup>87</sup> = 5.0 * 10<sup>154</sup>
 
 ## Artificial intelligence algorithms
 In total, I have implemented six adversarial search algorithms that are commonly used in zero-sum games like Abalone.
