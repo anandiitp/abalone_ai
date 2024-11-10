@@ -56,4 +56,4 @@ The evaluation function, then, is the sum of the scores given by all the heurist
 
 
 ## Results
-Overall, the Principle Variation Search with the Transposition Table Optimization performed best, while Minimax performed worst. Monte-Carlo Tree Search was not testable on my machine.
+Overall, the Principle Variation Search with the Transposition Table Optimization performed best, while Minimax performed worst. 
