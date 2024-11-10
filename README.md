@@ -1,5 +1,5 @@
 # Abalone-AI
-Altin Rexhepaj, 2018 
+
 
 ## Abstract
 Abalone-AI is an intelligent game-playing agent for the strategic board game [Abalone](https://en.wikipedia.org/wiki/Abalone_(board_game)). I discuss the implementation of the game-playing agent using several artificial intelligence algorithms.
@@ -69,8 +69,6 @@ The last heuristic is given by the difference in the amount of marbles on the bo
 
 The evaluation function, then, is the sum of the scores given by all the heuristics: *eval = h<sub>1</sub> + h<sub>2</sub> + h<sub>3</sub>*  
 
->*I discovered through trial and error that h<sub>2</sub> should be used when the marbles are far from the center: |h<sub>1</sub>| > 2 and h<sub>3</sub> should be used when the marbles are near the center: |h<sub>1</sub>| < 1.8 , and when h<sub>3</sub> is used, h<sub>3</sub> is scaled by a factor of 100 so that attacking moves are favoured.*
-
 ### Optimizations
 Move ordering and transposition tables are extremely important so that better paths are searched first.
 
@@ -103,7 +101,3 @@ Open `dump.py` and fill out the game state template and run the program using th
 ## Running the game agent
 1. Install dependencies: `python setup.py develop`
 2. Run: `start.py` and follow the command-line interface to either load a JSON state (see Generating a state file) or simulate a game between two AI computers in a game of Abalone
-
-# Screenshot
-![image](https://github.com/altin/abalone-engine/blob/master/example.PNG)
-![image](https://github.com/altin/abalone-engine/blob/master/example2.PNG)
