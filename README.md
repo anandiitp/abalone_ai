@@ -33,7 +33,6 @@ In total, I have implemented six adversarial search algorithms that are commonly
 
 ### State representation
 Unlike many board games, Abalone uses a hexagonal grid which is not feasible to represent with a Cartesian or matrix coordinate system as done with square boards.
-> *Special thanks to https://github.com/umazalakain for her solid implementation of the game logic and API's. Her implementation served as the foundation for the game agent.*
 
 The coordinates are read in terms of the diagonal columns (x), and the horizontal rows (z). The columns increase diagonally, while the rows increase vertically. The coordinates of a single marble are expressed as a named tuple with two entries:
 
